@@ -39,7 +39,7 @@ package com.xs.pattern.staticproxy;
 public class Target implements Callable {  
   
     public void call() {  
-        System.out.println("call...");  
+        System.out.println("我才是幕后黑手，坏事都是指使的");
     }  
   
 }  
@@ -64,9 +64,9 @@ public class Proxy implements Callable {
     }  
   
     public void call() {  
-        System.out.println("before...");  
-        callable.call();  
-        System.out.println("after...");  
+        System.out.println("我是小弟，接收命令开始办事");
+        callable.call();
+        System.out.println("我是小弟，办完事开始背锅");
     }  
   
 }  
